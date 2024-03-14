@@ -2,10 +2,6 @@
 
 For documentation visit - [Documentation](http://tharunsree.github.io/Java-P-C/)
 
-- When New programs Are added Documentation will be updated
+- When New programs are added or current programs are changed Documentation will be updated
 
-> **Warning**
->
-> Code is not reusable
->
-{style="note"}
+

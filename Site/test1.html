@@ -1,0 +1,73 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-03-15T02:57:57.7260602"><title>Array Insertion | Contents</title><script type="application/json" id="virtual-toc-data">[{"id":"code-overview","level":0,"title":"Code Overview","anchor":"#code-overview"},{"id":"import-statements","level":0,"title":"Import Statements","anchor":"#import-statements"},{"id":"main-method","level":0,"title":"Main Method","anchor":"#main-method"},{"id":"creating-scanner-object","level":0,"title":"Creating Scanner Object","anchor":"#creating-scanner-object"},{"id":"creating-arraylist","level":0,"title":"Creating ArrayList","anchor":"#creating-arraylist"},{"id":"reading-user-input","level":0,"title":"Reading User Input","anchor":"#reading-user-input"},{"id":"displaying-the-arraylist","level":0,"title":"Displaying the ArrayList","anchor":"#displaying-the-arraylist"},{"id":"inserting-an-element-at-a-specific-position","level":0,"title":"Inserting an Element at a Specific Position","anchor":"#inserting-an-element-at-a-specific-position"},{"id":"displaying-the-updated-arraylist","level":0,"title":"Displaying the Updated ArrayList","anchor":"#displaying-the-updated-arraylist"},{"id":"conclusion","level":0,"title":"Conclusion","anchor":"#conclusion"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b224/app.css" rel="stylesheet"><link rel="manifest" href="site.webmanifest"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Array Insertion | Contents"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Contents Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/test1.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Array Insertion | Contents"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/test1.html#webpage",
+    "url": "writerside-documentation/test1.html",
+    "name": "Array Insertion | Contents",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Contents Help"
+}</script><!-- End Schema.org --></head><body data-id="Test1" data-main-title="Array Insertion" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Contents  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Test1" id="Test1.md">Array Insertion</h1><p id="-w7kjsy_1394">This Java program is designed to create an array, allow the user to input elements into the array, and then insert a new element at a specified position. The program uses the <code class="code" id="-w7kjsy_1395">ArrayList</code> class from the <code class="code" id="-w7kjsy_1396">java.util</code> package to create a dynamic array and the Scanner class to take input from the user.</p><section class="chapter"><h2 id="code-overview" data-toc="code-overview">Code Overview</h2><div class="code-collapse" data-lang="java" data-is-expanded="false" data-synopsis="import java.util.ArrayList;">
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Array {
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        ArrayList&lt;Integer&gt; arr = new ArrayList&lt;&gt;();
+
+        System.out.printf(&quot;Enter total Elements to enter in array: &quot;);
+        int n = in.nextInt();
+
+        System.out.println(&quot;Enter Elements: &quot;);
+        for(int i = 0; i &lt; n; i++) {
+            System.out.printf(&quot;Enter Element %d: &quot;,i+1);
+            arr.add(in.nextInt());
+        }
+
+        System.out.println(&quot;Current Array: &quot;+ arr);
+
+        System.out.printf(&quot;Enter Position to Insert: &quot;);
+        int pos = in.nextInt();
+
+        System.out.printf(&quot;Enter Element: &quot;);
+        arr.add(pos-1, in.nextInt());
+
+        System.out.println(&quot;New Array: &quot; + arr);
+    }
+}
+</div></section><section class="chapter"><h2 id="import-statements" data-toc="import-statements">Import Statements</h2><div class="code-block" data-lang="java">
+import java.util.ArrayList;
+import java.util.Scanner;
+</div><p id="-w7kjsy_1399">These lines import two classes from the <code class="code" id="-w7kjsy_1400">java.util</code> package. <code class="code" id="-w7kjsy_1401">ArrayList</code> is a resizable array, which can grow or shrink dynamically. <code class="code" id="-w7kjsy_1402">Scanner</code> is a class that provides methods for reading input of various types from various sources, in this case, from the standard input stream (keyboard).</p></section><section class="chapter"><h2 id="main-method" data-toc="main-method">Main Method</h2><div class="code-block" data-lang="java">
+public static void main(String[] args)
+</div><p id="-w7kjsy_1404">This is the entry point of any Java program. The JVM starts executing the program by calling the <code class="code" id="-w7kjsy_1405">main</code> method. The <code class="code" id="-w7kjsy_1406">public</code> keyword means that the method is accessible anywhere. <code class="code" id="-w7kjsy_1407">static</code> means it belongs to the Array class and not to any instance of the class. The <code class="code" id="-w7kjsy_1408">void</code> keyword means it doesn&rsquo;t return any value.</p></section><section class="chapter"><h2 id="creating-scanner-object" data-toc="creating-scanner-object">Creating Scanner Object</h2><div class="code-block" data-lang="java">
+Scanner in = new Scanner(System.in);
+</div><p id="-w7kjsy_1410">Here, we&rsquo;re creating an instance of the <code class="code" id="-w7kjsy_1411">Scanner</code> class. This instance <code class="code" id="-w7kjsy_1412">in</code> will be used to read the input provided by the user. <code class="code" id="-w7kjsy_1413">System.in</code> is passed as an argument to the <code class="code" id="-w7kjsy_1414">Scanner</code> constructor to tell it to read from the standard input stream (keyboard).</p></section><section class="chapter"><h2 id="creating-arraylist" data-toc="creating-arraylist">Creating ArrayList</h2><div class="code-block" data-lang="java">
+ArrayList&lt;Integer&gt; arr = new ArrayList&lt;&gt;();
+</div><p id="-w7kjsy_1416">We&rsquo;re creating an <code class="code" id="-w7kjsy_1417">ArrayList</code> named <code class="code" id="-w7kjsy_1418">arr</code> that will store the integers input by the user. <code class="code" id="-w7kjsy_1419">ArrayList</code> is a part of the Java Collection Framework and extends the <code class="code" id="-w7kjsy_1420">AbstractList</code> class. It implements the <code class="code" id="-w7kjsy_1421">List</code> interface.</p></section><section class="chapter"><h2 id="reading-user-input" data-toc="reading-user-input">Reading User Input</h2><div class="code-block" data-lang="java">
+System.out.printf(&quot;Enter total Elements to enter in array: &quot;);
+int n = in.nextInt();
+
+System.out.println(&quot;Enter Elements: &quot;);
+for(int i = 0; i &lt; n; i++) {
+    System.out.printf(&quot;Enter Element %d: &quot;,i+1);
+    arr.add(in.nextInt());
+}
+</div><p id="-w7kjsy_1423">The program prompts the user to enter the total number of elements they want to add to the array. It then enters a loop, prompting the user to enter each element one by one. These elements are added to the <code class="code" id="-w7kjsy_1424">ArrayList</code> using the <code class="code" id="-w7kjsy_1425">add</code> method.</p></section><section class="chapter"><h2 id="displaying-the-arraylist" data-toc="displaying-the-arraylist">Displaying the ArrayList</h2><div class="code-block" data-lang="java">
+System.out.println(&quot;Current Array: &quot;+ arr);
+</div><p id="-w7kjsy_1427">The program then prints the current elements of the <code class="code" id="-w7kjsy_1428">ArrayList</code>.</p></section><section class="chapter"><h2 id="inserting-an-element-at-a-specific-position" data-toc="inserting-an-element-at-a-specific-position">Inserting an Element at a Specific Position</h2><div class="code-block" data-lang="java">
+System.out.printf(&quot;Enter Position to Insert: &quot;);
+int pos = in.nextInt();
+
+System.out.printf(&quot;Enter Element: &quot;);
+arr.add(pos-1, in.nextInt());
+</div><p id="-w7kjsy_1430">The program asks the user for the position at which they want to insert a new element, and then the value of the element. The <code class="code" id="-w7kjsy_1431">add</code> method is used again, but this time with two parameters: the position and the value. Note that the position is <code class="code" id="-w7kjsy_1432">pos-1</code> because <code class="code" id="-w7kjsy_1433">ArrayList</code> indices start at 0.</p></section><section class="chapter"><h2 id="displaying-the-updated-arraylist" data-toc="displaying-the-updated-arraylist">Displaying the Updated ArrayList</h2><div class="code-block" data-lang="java">
+System.out.println(&quot;New Array: &quot; + arr);
+</div><p id="-w7kjsy_1435">Finally, the program prints the updated <code class="code" id="-w7kjsy_1436">ArrayList</code>.</p></section><section class="chapter"><h2 id="conclusion" data-toc="conclusion">Conclusion</h2><p id="-w7kjsy_1437">This program is a simple demonstration of how to manipulate an <code class="code" id="-w7kjsy_1438">ArrayList</code> in Java. It covers some basic concepts such as taking user input, using a loop, and working with <code class="code" id="-w7kjsy_1439">ArrayLists</code>. Understanding this program will provide a solid foundation for working with arrays and user input in Java. Happy coding!</p><aside class="prompt" data-type="tip" data-title="" id="-w7kjsy_1440"><p id="-w7kjsy_1441"><span class="control" id="-w7kjsy_1442">Tips</span></p><ul class="list _bullet" id="-w7kjsy_1443"><li class="list__item" id="-w7kjsy_1444"><p>Remember that 'ArrayList' indices start at 0, so when inserting an element at a specific position, use 'pos-1'.</p></li></ul></aside><aside class="prompt" data-type="warning" data-title="" id="-w7kjsy_1445"><p id="-w7kjsy_1446"><span class="control" id="-w7kjsy_1447">Warnings</span></p><ul class="list _bullet" id="-w7kjsy_1448"><li class="list__item" id="-w7kjsy_1449"><p>Always ensure that the position entered for insertion is within the valid range (1 to array size + 1). Entering a position outside this range will result in an 'IndexOutOfBoundsException'.</p></li></ul></aside><aside class="prompt" data-type="note" data-title="" id="-w7kjsy_1450"><p id="-w7kjsy_1451"><span class="control" id="-w7kjsy_1452">Note</span></p><ul class="list _bullet" id="-w7kjsy_1453"><li class="list__item" id="-w7kjsy_1454"><p>This program does not handle invalid inputs. If the user enters a non-integer when prompted for an integer, the program will throw an 'InputMismatchException'. Always validate user input in real-world applications.</p></li></ul></aside></section><div class="last-modified">Last modified: 14 March 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="java-programs.html" class="navigation-links__prev">Java Programs</a><a href="prime-number-between-a-range.html" class="navigation-links__next">Prime Number Between a Range</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b224/app.js"></script></body></html>

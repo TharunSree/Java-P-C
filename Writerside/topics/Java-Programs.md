@@ -1,10 +1,10 @@
 # Java Programs
 
-Here you will find the **Documentations** of the code with _proper_ explanations. The **Doumentation** is ~~length~~ so that the readers will have an ease of _understanding each concept_.
+You will find the **`Documentations`** of the code with _`proper`_ explanations. The **`Doumentation`** is ~~`lengthy`~~ so that the readers can have an ease of _`understanding of each concept`_.
 
-With referance to the Documentation of the previous programs, the Documentation gets shorter and only the new concepts are explained.
+With referance to the Docs of the previous programs, the Docs gets shorter and only the new concepts are explained.
 
-This Documentation will have the following features for ease of use and readability
+The Docs will have the following features for ease of use and readability
 
 - You will have codeblocks like these
 ```Java

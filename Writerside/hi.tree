@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Contents"
+                 start-page="Java-Programs.md">
+
+    <toc-element topic="Java-Programs.md"/>
+    <toc-element topic="Test1.md"/>
+    <toc-element topic="Prime-Number-Between-a-Range.md"/>
+    <toc-element topic="String-Operations-in-Java.md"/>
+</instance-profile>

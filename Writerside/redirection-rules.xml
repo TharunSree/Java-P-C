@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="3661aff0">
+        <description>Created after removal of "This is the first topic" from Help Instance</description>
+        <accepts>Default-topic.html</accepts>
+    </rule>
+    <rule id="7a5a054d">
+        <description>Created after removal of "How to" from Help Instance</description>
+        <accepts>How-to.html</accepts>
+    </rule>
+    <rule id="1f1effe">
+        <description>Created after removal of "Tutorial" from Help Instance</description>
+        <accepts>Tutorial.html</accepts>
+    </rule>
+    <rule id="6da88e6a">
+        <description>Created after removal of "Section Starting Page" from Help Instance</description>
+        <accepts>Section-Starting-Page.html</accepts>
+    </rule>
+    <rule id="7e98db11">
+        <description>Created after removal of "String Operations" from Contents</description>
+        <accepts>How-to.html</accepts>
+    </rule>
+</rules>

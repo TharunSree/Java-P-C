@@ -26,4 +26,12 @@
         <description>Created after removal of "String Operations" from Contents</description>
         <accepts>How-to.html</accepts>
     </rule>
+    <rule id="49abfaab">
+        <description>Created after removal of "Array Insertion" from Contents</description>
+        <accepts>Test.html</accepts>
+    </rule>
+    <rule id="4d836133">
+        <description>Created after removal of "Array Insertion" from Contents</description>
+        <accepts>Tbs-Test.html</accepts>
+    </rule>
 </rules>

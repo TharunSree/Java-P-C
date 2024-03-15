@@ -5,6 +5,9 @@ You will find the **`Documentations`** of the code with _`proper`_ explanations.
 With referance to the Docs of the previous programs, the Docs gets shorter and only the new concepts are explained.
 
 The Docs will have the following features for ease of use and readability
+- If Multiple ways of writing the same code is there then There will be a switch menu on top like this. Select the required Method from here.
+
+![sections-switcher.png](../../sections-switcher.png)
 
 - You will have codeblocks like these
 ```Java

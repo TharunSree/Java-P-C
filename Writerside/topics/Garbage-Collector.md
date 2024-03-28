@@ -1,4 +1,4 @@
-# Garbage Class Documentation
+# Garbage Collection
 
 The `Garbage` class is a simple Java program that demonstrates the use of the Java Runtime class and the garbage collector. It prints the total memory, the free memory before and after the garbage collector runs.
 
@@ -43,7 +43,7 @@ Runtime rn = Runtime.getRuntime();
 
 This line creates an instance of the Runtime class. This class provides methods to interface with the Java runtime environment.
 
-## Printing the Total Memory and Current Memory
+## Printing the Total Memory and Free Memory before Running Garbage Collector
 
 ```Java
 System.out.printf("\nTotal Memory: %d",rn.totalMemory());

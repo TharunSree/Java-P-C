@@ -1,6 +1,6 @@
-# Prime Number in a Range
+# Prime Numbers within a set Range
 
-This Java program is designed to find all prime numbers within a given range. The user is prompted to enter the start and end of the range, and the program outputs all prime numbers within that range.
+This Java program is designed to find all prime numbers within a given range. The user is prompted to enter the start and end of the range, and the program outputs all prime numbers within that range. 
 
 ## Code Breakdown
 

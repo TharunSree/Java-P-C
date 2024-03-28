@@ -74,14 +74,14 @@ In the `Geofig` class, there are multiple `calculateArea` methods, each with a d
 
 The `calculateArea` method is overloaded four times to calculate the area of four different geometric figures:
 
-1. Square: The method takes one float parameter (the side of the square) and returns the area of the square.
+1. **Square**: The method takes one float parameter (the side of the square) and returns the area of the square.
 ```Java
 float calculateArea(float side) {
     return side * side;
 } 
 ```
 
-2. Rectangle: The method takes two float parameters (the length and width of the rectangle) and returns the area of the rectangle.
+2. **Rectangle**: The method takes two float parameters (the length and width of the rectangle) and returns the area of the rectangle.
 
 ```Java
 float calculateArea(float length, float width) {
@@ -89,7 +89,7 @@ float calculateArea(float length, float width) {
 }
 ```
 
-3. Triangle: The method takes two double parameters (the base and height of the triangle) and returns the area of the triangle.
+3. **Triangle**: The method takes two double parameters (the base and height of the triangle) and returns the area of the triangle.
 
 ```Java
 double calculateArea(double base, double height) {
@@ -97,7 +97,7 @@ double calculateArea(double base, double height) {
 }
 ```
 
-4. Circle: The method takes one double parameter (the radius of the circle) and returns the area of the circle.
+4. **Circle**: The method takes one double parameter (the radius of the circle) and returns the area of the circle.
 
 ```Java
 double calculateArea(double radius) {

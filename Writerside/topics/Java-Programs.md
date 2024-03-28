@@ -10,8 +10,8 @@ The Docs will have the following features for ease of use and readability
 ![sections-switcher.png](../../sections-switcher.png)
 
 - You will have codeblocks like these
-```Java
-System.out.printf("Codeblock");
+```Python
+print("😊 Welcome 😊");
 ```
 
 - Any special code will be `highlighted`

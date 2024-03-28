@@ -10,4 +10,6 @@
     <toc-element topic="Test1.md"/>
     <toc-element topic="Prime-Number-Between-a-Range.md"/>
     <toc-element topic="String-Operations-in-Java.md"/>
+    <toc-element topic="Garbage-Collector.md"/>
+    <toc-element topic="Method-Overloading.md"/>
 </instance-profile>
